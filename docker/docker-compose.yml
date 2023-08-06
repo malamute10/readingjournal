@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  db:
+    image: postgres:latest
+    container_name: reading-journal-db
+    restart: always
+    environment:
+      POSTGRES_USER: "dev"
+      POSTGRES_PASSWORD: "1234"
+    ports:
+      - "5433:5432"
